@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Task_1
 {
     internal class Program
-    {
+    {//kjkhjkgkgkhg
         static void Main(string[] args)
         {
             MatrixGenerator test = new MatrixGenerator(7, 4);
