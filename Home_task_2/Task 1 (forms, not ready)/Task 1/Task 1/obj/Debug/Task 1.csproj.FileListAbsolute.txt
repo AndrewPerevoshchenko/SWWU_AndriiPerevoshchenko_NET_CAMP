@@ -1,0 +1,30 @@
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\bin\Debug\Task 1.exe.config
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\bin\Debug\Task 1.exe
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\bin\Debug\Task 1.pdb
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.csproj.AssemblyReference.cache
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.csproj.CoreCompileInputs.cache
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.exe
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.pdb
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Tower.g.cs
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1_MarkupCompile.cache
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1_MarkupCompile.lref
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Tower.baml
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.g.resources
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task_1.SimulatorForm.resources
+C:\Users\nena\Desktop\Home_task_2\Task 1\Task 1\obj\Debug\Task 1.csproj.GenerateResource.cache
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\bin\Debug\Task 1.exe.config
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\bin\Debug\Task 1.exe
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\bin\Debug\Task 1.pdb
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.csproj.AssemblyReference.cache
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Tower.g.cs
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1_MarkupCompile.cache
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1_MarkupCompile.lref
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Tower.baml
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.g.resources
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task_1.SimulatorForm.resources
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.csproj.GenerateResource.cache
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.csproj.CoreCompileInputs.cache
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.exe
+C:\Users\nena\Desktop\1\Home_task_2\Task 1 (forms, not ready)\Task 1\Task 1\obj\Debug\Task 1.pdb
