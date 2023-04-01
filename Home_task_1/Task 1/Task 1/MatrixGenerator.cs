@@ -36,6 +36,7 @@ namespace Task_1
             int beginElement = 0; //Змінна для заповнення
             int i, j = 0;
             int substitution = _sizeM + _sizeN - 2; //Для віддзеркалення, закономірність: заповнюючи один стовпчик, заповнюємо протилежний, й так з рядками
+            // Розкажете на занятті свій підхід. Добре те, що хочемо врахувати  дзеркальність.Погано, що не до кінця ще оптимізовано.
             while (substitution >= 0 && beginElement + substitution < _matrix.Length)
             {
                 for (i = border; i < _sizeM - border; ++i)
@@ -68,7 +69,7 @@ namespace Task_1
             }
         }
         public void FormSnakeClockWise()
-        {
+        {// Dи транспонуванням міняєте розміри матриці, а від Ва просять вміти для незмінних розмірів за іншим принципом закрутити спіраль
             FormSnakeAntiClockWise(); //Формуємо за годинниковою стрілкою
             int[,] matrixTemp = new int[_sizeN, _sizeM]; //Транспонування матриці
             for (int i = 0; i < _sizeM; ++i)
