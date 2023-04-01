@@ -11,6 +11,7 @@ namespace Task_2_variant_1
         private byte[,] _pixels;
         private int _sizeM;
         private int _sizeN;
+        // Краще всі ці величини повертати як параметри методів.
         private int _rowIndex;
         private int _beginIndex;
         private int _maxSize;
@@ -59,12 +60,13 @@ namespace Task_2_variant_1
             for (int i = 0; i < _sizeM; ++i)
             {
                 for (int j = 0; j < _sizeN; ++j)
-                {
+                {// Цієї чарівної константи нам тут не треба...
                     _pixels[i, j] = Convert.ToByte(random.Next(0, 17));
                 }
             }
         }
         public void FindPopulars() //Пошук найдовшої послідовності однакових чисел
+            //Алгоритм цікавий. Розкажіть про нього на занятті.Він не завди кращий від стандартного...
         {
             int middle = _sizeN / 2 + 1; //Шукаємо середину для окремих випадків
             for (int i = 0; i < _sizeM; ++i)
