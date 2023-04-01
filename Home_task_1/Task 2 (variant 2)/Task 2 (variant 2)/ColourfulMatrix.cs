@@ -100,7 +100,7 @@ namespace HT_23._03._23
             return isChanged;
         }
         public void FindTheLargestSubsequence()
-        {
+        {// затратніше по пам'яті.
             int counter = 0; //Індексація рядків матриці
             int buffer = -1; //Потрібен для того, щоб підстрічки, які йдуть до кінця стрічки масиву, запам'ятовувалися алгоритмом
             foreach (var item in _matrix)
