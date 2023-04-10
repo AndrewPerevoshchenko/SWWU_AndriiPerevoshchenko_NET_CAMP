@@ -18,7 +18,7 @@ namespace HT_23._03._23
         private Type _type; //Тип тензора
         private T? _element; //Яким елементом і якого типу заповнюємо
         private dynamic _tensor; //Структура тензора
-        
+       // Вітаю. Ви майже народили шаблон проєктування Компонувальник))). Бали отримаєте по максимуму. 
         public Tensor(T? element, uint dimension = 3, params uint[] lengths)
         {
             _dimension = dimension;
@@ -27,6 +27,8 @@ namespace HT_23._03._23
             {
                 _sizes[i] = lengths[i];
             }
+            // Не зовсім розумію, що визначає це поле. У вас клас узагальнення, а тут визначення типу прив'язується до uint??? Спробуйте пояснити цю світлу ідею.
+            
             _type = typeof(uint);
             _element = element;
             _tensor = 0;
