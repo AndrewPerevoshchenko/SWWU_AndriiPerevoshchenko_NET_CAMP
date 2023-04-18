@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Task_1
-{
+{// Тут постаралися!!!  
     public struct Coordinates
     {
         private int _row;
