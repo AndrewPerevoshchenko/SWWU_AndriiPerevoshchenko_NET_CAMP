@@ -13,9 +13,9 @@ namespace Task_2
 		public StringWork(string fileURL)
 		{
 			_text = System.IO.File.ReadAllLines(fileURL);
-		}
+		}// назва методу не відповідає результату повернення!!!
 		public (uint?, uint?) FindSecondSubstring(string subString)
-		{
+		{// Ініціалізовуйте завжди змінні.
 			uint i;
 			for(i = 0; i < _text.Length; ++i) //Пошук першої підстрічки
 			{
@@ -43,7 +43,7 @@ namespace Task_2
 		{
 			uint counter = 0;
 			foreach (string str in _text)
-			{
+			{// тут добре!
 				counter += (uint)str.Where(c => char.IsUpper(c)).Count(); //Рахуємо всі слова в стрічці, де літера збігається з літерою у верхньому регістрі
 			}
 			return counter;
@@ -56,6 +56,7 @@ namespace Task_2
 				foreach(string item in temp)
 				{
 					int count = 0;
+					// під крапкою розуміється 1 символ, в тому числі і пробільний.
 					count += System.Text.RegularExpressions.Regex.Matches(item, @"(.)\1").Count; //Рахуємо скільки повторювальних літер підряд
 					if(count > 0)
 					{
