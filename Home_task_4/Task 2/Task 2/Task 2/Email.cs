@@ -1,5 +1,5 @@
 ﻿using Microsoft.Win32.SafeHandles;
-
+//Досить акуратно і зрозуміло.
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Task_2
 {
     internal class Email
-    {
+    {//Можна б ці поля зробити тільки для читання. так гнучкіше, якщо змінюються вимоги.
         private const uint LOCAL_LENGTH = 64;
         private const uint DOMAIN_LENGTH = 255;
         private string _localPart; 
@@ -27,6 +27,7 @@ namespace Task_2
             _localPart = localPart;
             _domain = domain;
         }
+        // Краще, щоб цей метод повертав значення, а поля  _isEmail не було. Інакше користувач може запистути властивість перед використанням методу і отримати true.
         public void CheckEmail()
         {
             int function = 0; 
