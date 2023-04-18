@@ -25,7 +25,7 @@
             Console.WriteLine("~~~ Count the electricity expences of each flat ~~~\n");
             Dictionary<(uint, string), string> expences = energySystem.CountExpenses();
             foreach(var item in expences)
-            {
+            {// Не форматований роздрук. 
                 Console.WriteLine(item.Key.Item1 + " | " + item.Key.Item2 + ": " + item.Value);
             }
             Console.WriteLine("~~~ The difference between dates of each flat ~~~ \n");
