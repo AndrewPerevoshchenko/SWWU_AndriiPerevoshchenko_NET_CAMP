@@ -33,9 +33,9 @@ namespace Task_1
         }
     }
     internal class Garden
-    {
+    {// Цю константу можете змінити тільки Ви, отже, якщо клас зробите бібліотечним, то цей параметр буде не гнучким.
         private const int RANDOM_STANDART = 10;
-        private uint _treesAmount;
+        private uint _treesAmount;// можна обійтись...
         private List<Point> _trees;
         private double _fenceLength;
         public double FenceLength
@@ -97,7 +97,7 @@ namespace Task_1
                 int statedIndex, checkingIndex;
                 List<Point> fenceTrees = new List<Point>();
                 int minIndex = (int)_treesAmount - 1;
-                for(int i = 0; i < _treesAmount - 1; ++i) //Пошук найлівішої точки по Х
+                for(int i = 0; i < _treesAmount - 1; ++i) //Пошук найлівішої точки по Х// може бути будь-яка з кутових
                 {
                     if (_trees[i].X < _trees[minIndex].X)
                     {
