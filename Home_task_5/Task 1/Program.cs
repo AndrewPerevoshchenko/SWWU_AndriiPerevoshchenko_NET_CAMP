@@ -1,7 +1,7 @@
 ﻿namespace Task_1
 {
     internal class Program
-    {//Andrii	Perevoshchenko	95	18	20	92	85	95	100	112,4
+    {//Andrii	Perevoshchenko	95	18	20	92	85	95	100	112,4 Вітаю Вас у 2 турі.
         static void Main(string[] args)
         {
             Garden garden = new Garden(@"C:\Users\nena\Desktop\Sigma курси\Home_task_5\Task 1\Data.txt");
