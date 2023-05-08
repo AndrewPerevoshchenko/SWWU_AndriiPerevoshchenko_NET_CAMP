@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Home_task_7
 {
-    internal struct ColoursTimer
+    //Ідея доволі проста: час перемикання між кольорами світлофорів у даному випадку буде єдиним для всіх світлофорів. З жовтого на червоний та з жовтого на зелений - час може відрізнятися
+    internal struct ColoursTimer //Час перемикання між кольорами світлофорів
     {
         public const double MIN_TIMER = 1;
-        private static double R_Y;
-        private static double Y_G;
-        private static double G_Y;
-        private static double Y_R;
+        private static double R_Y; //З червоного на жовтий
+        private static double Y_G; //З жовтого на зелений
+        private static double G_Y; //Із зеленого на жовтий
+        private static double Y_R; //З жовтого на червоний
         public static double RedToYellow
         {
             get { return R_Y; }
@@ -42,17 +43,17 @@ namespace Home_task_7
             Y_R = yellow_red;
         }
     }
-    internal class TrafficSimulator
+    internal class TrafficSimulator 
     {
-        private List<string> _logString;     
-        private List<TrafficLight> _trafficLights;
-        private ColoursTimer _coloursTimer;
-        private double _timerAdded;
+        private List<string> _logString; //Результуючі стрічки   
+        private List<TrafficLight> _trafficLights; //Світлофори (набір)
+        private ColoursTimer _coloursTimer; //Таймер світла (один єдиний у даному випадку). Якщо розширювати задачу, то 
+        private double _timerAdded; //Останній таймінг, який був доданий (для лог-стрічки потрібне саме поле, а не змінна, що повертатиметься функцією).
         public ColoursTimer ColoursTimer
         {
             get { return _coloursTimer; }
         }
-        public double _timer;
+        public double _timer; //Власне, таймер
         public TrafficSimulator(in ColoursTimer coloursTimer, params TrafficLight[] trafficLights)
         {
             _logString = new List<string>();
@@ -71,62 +72,66 @@ namespace Home_task_7
         /// T - two, O - opposite, S - synchronized
         /// </summary>
         /// <param name="StartSchemeTOS"></param>
-        public string StartSchemeTOS(double timerCeil)
+        public string StartSchemeTOS(double timerCeil) //Схема, що дозволяє регулювати дві групи світлофорів (протилежні - синхронні)
         {
-            var groupedList = Validator.GroupByDirection(_trafficLights);
-            if (!Validator.CheckOppositeSynchonization()) throw new Exception("Opposite traffic lights are not synchronized!");
+            var groupedList = Validator.GroupByDirection(_trafficLights); //Формування двох груп світлофорів
+            if (!Validator.CheckOppositeSynchonization()) throw new Exception("Opposite traffic lights are not synchronized!"); //Чи синхронізовані протилежні
             if (groupedList.Count != 2) throw new InvalidDataException("Incorrect amount of the groups");
-            foreach(var trafficLight in groupedList[0])
+            foreach(var trafficLight in groupedList[0]) //Нехай світлофори першої групи будуть мати до включення жовтий колір, який йде перед зеленим
             {
                 trafficLight.Colour = TrafficColour.YellowBG;
             }
-            foreach(var trafficLight in groupedList[1])
+            foreach(var trafficLight in groupedList[1]) //А другої групи - перед червоним
             {
                 trafficLight.Colour = TrafficColour.YellowBR;
             }
-            groupedList[0][0].ColourChanged += ToString;
+            groupedList[0][0].ColourChanged += ToString; //Підписуємося на івенти (хард-кодом, але тут цикли оптимально)
             groupedList[0][1].ColourChanged += ToString;
             groupedList[1][0].ColourChanged += ToString;
             groupedList[1][1].ColourChanged += ToString;
             double timerFirst = 0;
             double timerSecond = 0;
-            ToString();
-            timerFirst = ColourNextGroup(groupedList[0]);
-            timerSecond = ColourNextGroup(groupedList[1]);
+            ToString(); //Викликаємо перший ToString() вручну
+            timerFirst = ColourNextGroup(groupedList[0]); //Час, що буде отриманий від переключання з наступного кольору на після наступного
+            timerSecond = ColourNextGroup(groupedList[1]); //Аналогічно
             double tempTimer = 0;
-            uint synchronized = 0;
-            while (_timer <= timerCeil)
+            bool synchronized = false; //Змінна, що відповідає за потребу додавання різниці таймінгів (жовтий може включатися по-різному, а от зелений і червоний будуть синхронізовані в даній схемі)
+            while (_timer < timerCeil) 
             {               
                 if (timerFirst <= timerSecond)
                 {
-                    _timer += timerFirst;
-                    tempTimer = timerFirst;
-                    timerFirst = ColourNextGroup(groupedList[0]);
-                    if (synchronized != 3)
+                    _timer += timerFirst; 
+                    if (_timer > timerCeil) break;
+                    tempTimer = timerFirst; //Запам'ятовуємо таймінг, який використовуватиметься в наступній стрічці
+                    timerFirst = ColourNextGroup(groupedList[0]); //Майбутній таймінг
+                    if (!synchronized) //Якщо не дійшли синхронізації, то треба різницю таймінгів додати
                     {
-                        ++synchronized;
+                        synchronized = true;
                         _timer += (timerSecond - tempTimer);
                     }
                     else
                     {
-                        synchronized = 0;
+                        synchronized = false; //Інакше - вимикаємо синхронізацію, адже цей етап уже пройшли
                     }
-                    timerSecond = ColourNextGroup(groupedList[1]);
+                    if (_timer > timerCeil) break;
+                    timerSecond = ColourNextGroup(groupedList[1]); //Новий таймінг для другої групи
                 }
-                else
+                else //Усе аналогічно
                 {
                     _timer += timerSecond;
+                    if (_timer > timerCeil) break;
                     tempTimer = timerSecond;
                     timerSecond = ColourNextGroup(groupedList[1]);
-                    if (synchronized != 3)
+                    if (!synchronized)
                     {
-                        ++synchronized;
+                        synchronized = true;
                         _timer += (timerFirst - tempTimer);
                     }
                     else
                     {
-                        synchronized = 0;
+                        synchronized = false;
                     }
+                    if (_timer > timerCeil) break;
                     timerFirst = ColourNextGroup(groupedList[0]);
                 }
             }
@@ -137,26 +142,26 @@ namespace Home_task_7
             }
             return logStr.ToString();
         }
-        private double ColourNextGroup(List<TrafficLight> group)
+        private double ColourNextGroup(List<TrafficLight> group) //Зміна кольорів для всієї групи
         {
-            double temp = group[0].ColourNext();
+            double temp = group[0].ColourNext(); //Змінна, щоб повернути час наступного перемикання
             for (int i = 1; i < group.Count; ++i)
             {
                 group[i].ColourNext();
             }
             return temp;
         }
-        public override string ToString()
+        public override string ToString() //Функція, яка викликається подією в тому числі
         {
             StringBuilder sb = new StringBuilder();
             StringBuilder sbFormat = new StringBuilder();
             sb.Append("Time: " + _timer + "\n");
-            sbFormat.Append($"{{{0}, -{"Direction from".Length}}}");
+            sbFormat.Append($"{{{0}, -{"Direction from".Length}}}"); //Для форматування
             for (int i = 0; i < _trafficLights.Count; ++i)
             {
-                sbFormat.Append($"  ||  {{{i+1}, -{TrafficLight.DIRECTION_MAX_LENGTH_STR}}}");
+                sbFormat.Append($"  ||  {{{i+1}, -{TrafficLight.DIRECTION_MAX_LENGTH_STR + 3}}}"); //Також для форматування (константу 3 треба було винести)
             }
-            string format = sbFormat.ToString();
+            string format = sbFormat.ToString(); //Сам формат
             List<string> tempList = new()
             {
                 "Direction from"
@@ -174,7 +179,7 @@ namespace Home_task_7
             tempList.AddRange(_trafficLights.Select(x => x.Colour.ToString()).ToList());
             sb.AppendFormat(format, tempList.ToArray());
             sb.Append("\n");
-            if (_timer == _timerAdded)
+            if (_timer == _timerAdded) //Якщо новий запис стосується того самого таймінгу, то старий видалити
             {
                 _logString.Remove(_logString.Last());                
             }
