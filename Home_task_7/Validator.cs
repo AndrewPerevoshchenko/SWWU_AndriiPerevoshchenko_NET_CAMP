@@ -13,10 +13,12 @@ namespace Home_task_7
         {
             return (sbyte)from == -(sbyte)to;
         }
+        //За цей метод хвалю!
         public static bool CheckOppositeSynchonization() //Перевірка: чи синхронізовані за часом проміжки "Зелений-жовтий-червоний" та "Червоний-жовтий-зелений"
         {
             return ColoursTimer.GreenToYellow + ColoursTimer.YellowToRed == ColoursTimer.RedToYellow + ColoursTimer.YellowToGreen;
         }
+        // тут теж цікава ідея. Покажіть у групі.
         public static List<List<TrafficLight>> GroupByDirection(List<TrafficLight> trafficLights) //Групування за напрямками
         {
             List<List<TrafficLight>> trafficGroups = new List<List<TrafficLight>>();
