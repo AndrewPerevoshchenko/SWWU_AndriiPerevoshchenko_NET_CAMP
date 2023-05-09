@@ -1,7 +1,8 @@
 ﻿namespace Home_task_7
 {
     internal class Program
-    {
+    // сумарний бал  94
+    {// загалом немає абстракції. Ви все будуєте на конкретних класах. А це не дасть гарно розвиватись.
         static void Main(string[] args) //Тут можна було переробити хард-код на введення користувачем. Задаються світлофори та таймінги переключення кольорів.
         {//світлофори мав би створювати сам симулятор.Навіщо це робити в main?  Крім того назви ідентифікаторів простошикарно інформативні)
             TrafficLight a = new TrafficLight(GeographicalDirection.North, GeographicalDirection.East, TrafficColour.Red);
