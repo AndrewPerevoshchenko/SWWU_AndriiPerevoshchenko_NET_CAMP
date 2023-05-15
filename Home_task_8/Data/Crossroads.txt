@@ -1,0 +1,11 @@
+﻿true
+OppositeAsynchronized
+North | South | Rectilinear | Red | 0 | 29 | 1 | 29 | 1
+North | South | Rectilinear | Red | 1 | 29 | 1 | 29 | 1
+South | North | Rectilinear | Red | 0 | 39 | 1 | 19 | 1
+South | North | Rectilinear | Red | 1 | 39 | 1 | 19 | 1
+East | West | Rectilinear | Red | 0 | 29 | 1 | 29 | 1
+West | East | Rectilinear | Red | 0 | 29 | 1 | 29 | 1
+North | West | Rotary | Red | 0 | 44 | 1 | 13 | 2
+North | East | Rotary | Red | 1 | 44 | 1 | 13 | 2
+South | East | Rotary | Red | 0 | 29 | 1 | 28 | 2

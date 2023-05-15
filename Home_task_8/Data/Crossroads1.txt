@@ -1,0 +1,8 @@
+﻿true
+OppositeAsynchronized
+NorthWest | SouthEast | Rectilinear | Red | 0 | 9 | 1 | 11 | 1.5
+SouthEast | NorthWest | Rectilinear | Red | 0 | 9 | 1 | 11 | 1.5
+NorthEast | SouthWest | Rectilinear | Red | 0 | 9 | 1 | 11 | 1.5
+SouthWest | NorthEast | Rectilinear | Red | 0 | 9 | 1 | 11 | 1.5
+NorthWest | SouthWest | Rotary | Red | 0 | 9 | 1 | 10 | 2.5
+NorthEast | NorthWest | Rotary | Red | 0 | 9 | 1 | 10 | 2.5
