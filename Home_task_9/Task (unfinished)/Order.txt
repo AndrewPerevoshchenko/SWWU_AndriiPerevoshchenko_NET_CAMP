@@ -1,0 +1,4 @@
+﻿Pizza 4 cheeses | Pizza | 2 | 15
+Hawaiian pizza | Pizza | 2 | 12
+Paradise dessert | Sweet | 1 | 7
+Apple juice | Drink | 5 | 2
