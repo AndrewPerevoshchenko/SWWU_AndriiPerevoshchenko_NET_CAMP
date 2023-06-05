@@ -1,0 +1,5 @@
+﻿American Express | 34 37 | 15
+Visa | 4 | 13 16
+MasterCard | 51 52 53 54 55 | 16
+UkrCard | 60400100 | 16 17 18 19
+UATP | 1 | 15

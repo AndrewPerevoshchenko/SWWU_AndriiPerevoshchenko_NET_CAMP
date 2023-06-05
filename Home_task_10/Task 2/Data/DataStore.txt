@@ -1,0 +1,6 @@
+﻿F | Cucumber | 90 | 20 2 2 | 1.05
+F | Tiramisu | 300 |  10 10 5 | 1.35
+E | Light Bulb | 70 | 3 3 7 | 70 | 2.1
+E | Laptop | 2220 | 45 25 2 | 2000 | 1.15
+C | Red Dress | 450 | 20 20 0.5
+C | Sport Cap | 125 | 15 10 1
