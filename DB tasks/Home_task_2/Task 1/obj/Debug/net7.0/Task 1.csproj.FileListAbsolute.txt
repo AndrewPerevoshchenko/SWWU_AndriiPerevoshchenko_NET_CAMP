@@ -1,0 +1,63 @@
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.csproj.AssemblyReference.cache
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.AssemblyInfoInputs.cache
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.AssemblyInfo.cs
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.csproj.CoreCompileInputs.cache
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Task 1.exe
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Task 1.deps.json
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Task 1.runtimeconfig.json
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Task 1.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Task 1.pdb
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nena\Desktop\Task 1\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.csproj.CopyComplete
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.dll
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\refint\Task 1.dll
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.pdb
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\Task 1.genruntimeconfig.cache
+C:\Users\nena\Desktop\Task 1\obj\Debug\net7.0\ref\Task 1.dll
